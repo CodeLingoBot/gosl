@@ -119,6 +119,8 @@ func ExecWithStdout(exe interface{}, args ...string) (stdout string, err error, 
 /*
 ExecWithStdout is similar to Exec but the stdout/stderr are captured and
 returned as the first/second return values.
+*/ExecWithStdErrOut is similar to Exec but the stdout/stderr are captured and
+returned as the first/second return values.
 */
 func ExecWithStdErrOut(exe interface{}, args ...string) (stdout, stderr string, err error, errCode int) {
 	if DryRun {
